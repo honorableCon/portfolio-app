@@ -52,11 +52,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MyContacts.class));
             }
         });
-         /*sidebar_nav_code.setOnClickListener(new View.OnClickListener() {
+        sidebar_nav_hobbies.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, MyServices.class));
+                startActivity(new Intent(MainActivity.this, MyHobbies.class));
             }
-        });*/
+        });
     }
 }

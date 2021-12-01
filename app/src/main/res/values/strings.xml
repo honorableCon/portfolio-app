@@ -18,4 +18,10 @@
 
     <string name="address_key">Address:</string>
     <string name="address_value">Dakar, Senegal</string>
+    <string name="writing">Writing</string>
+    <string name="my_hobbies">My Hobbies</string>
+    <string name="swimming">Swimming</string>
+    <string name="video_game">Video Game</string>
+    <string name="reading">Reading</string>
+    <string name="pen">pen</string>
 </resources>
