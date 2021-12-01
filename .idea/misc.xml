@@ -5,9 +5,11 @@
       <map>
         <entry key="app/src/main/res/drawable/rounded_corners.xml" value="0.176" />
         <entry key="app/src/main/res/drawable/yellow_progressbar.xml" value="0.3380208333333333" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3450520833333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24018126888217523" />
         <entry key="app/src/main/res/layout/activity_my_education.xml" value="0.4209799861973775" />
         <entry key="app/src/main/res/layout/activity_my_services.xml" value="0.39405684754521964" />
+        <entry key="app/src/main/res/layout/activity_side_navigator.xml" value="0.264" />
+        <entry key="app/src/main/res/layout/gap.xml" value="0.1" />
       </map>
     </option>
   </component>

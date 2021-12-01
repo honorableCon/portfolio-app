@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".SideNavigator"
+    android:background="@color/grey"
+    android:layout_gravity="end"
+    android:gravity="center"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    android:divider="@drawable/gap">
+
+    <TextView
+        android:id="@+id/sidebar_nav_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_awesome"
+        android:text="@string/fa_file_code_solid"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:padding="15dp"/>
+    <TextView
+        android:id="@+id/sidebar_nav_scolary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_awesome"
+        android:text="@string/fa_graduation_cap_solid"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/bg_icon_sidebar"
+        android:textSize="15sp"
+        android:padding="15dp"/>
+    <TextView
+        android:id="@+id/sidebar_nav_realized"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_awesome"
+        android:text="folder"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/bg_icon_sidebar"
+        android:textSize="15sp"
+        android:padding="15dp"/>
+    <TextView
+        android:id="@+id/sidebar_nav_hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_awesome"
+        android:text="gamepad"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/bg_icon_sidebar"
+        android:textSize="15sp"
+        android:padding="15dp"/>
+
+</LinearLayout>

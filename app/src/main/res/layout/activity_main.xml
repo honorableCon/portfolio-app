@@ -1,564 +1,576 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <LinearLayout
+    <ScrollView
+        android:background="@color/white"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:context=".MainActivity"
-        android:orientation="vertical"
-        android:paddingHorizontal="30dp">
-
-        <android.support.design.widget.NavigationView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:contentDescription="@string/profile_picture_description"
-            app:srcCompat="@drawable/profile" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:text="@string/my_name"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:text="@string/my_dev_profile"
-            android:textSize="20sp" />
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal">
-
-            <info.androidhive.fontawesome.FontTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                android:background="@drawable/rounded_corners"
-                android:padding="10dp"
-                android:text="@string/fa_user_alt_slash_solid"
-                android:textColor="#000"
-                android:textSize="20sp"
-                app:solid_icon="true" />
-
-            <info.androidhive.fontawesome.FontTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                android:background="@drawable/rounded_corners"
-                android:padding="10dp"
-                android:text="@string/fa_envelope"
-                android:textColor="#000"
-                android:textSize="20sp"
-                app:solid_icon="true" />
-
-            <info.androidhive.fontawesome.FontTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                android:background="@drawable/rounded_corners"
-                android:padding="10dp"
-                android:text="@string/fa_envelope"
-                android:textColor="#000"
-                android:textSize="20sp"
-                app:solid_icon="true" />
-
-            <info.androidhive.fontawesome.FontTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                android:background="@drawable/rounded_corners"
-                android:padding="10dp"
-                android:text="@string/fa_book_reader_solid"
-                android:textColor="#000"
-                android:textSize="20sp"
-                app:solid_icon="true" />
-
-            <info.androidhive.fontawesome.FontTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                android:background="@drawable/rounded_corners"
-                android:padding="10dp"
-                android:text="@string/fa_book_reader_solid"
-                android:textColor="#000"
-                android:textSize="20sp"
-                app:solid_icon="true" />
-
-            <info.androidhive.fontawesome.FontTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
-                android:layout_marginEnd="7dp"
-                android:background="@drawable/rounded_corners"
-                android:padding="10dp"
-                android:text="@string/fa_book_reader_solid"
-                android:textColor="#000"
-                android:textSize="20sp"
-                app:solid_icon="true" />
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/divider"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/listDivider"
-            android:layout_marginVertical="12dp"/>
-
-        <LinearLayout
+            android:layout_gravity="start"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="15dp">
+            tools:context=".MainActivity"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp">
 
-
-            <TextView
-                android:id="@+id/textView3"
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/yellow"
-                android:padding="5dp"
-                android:text="@string/username_key"
-                android:textSize="18sp" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/profile_picture_description"
+                app:srcCompat="@drawable/profile" />
 
             <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/username_value"
-                android:textAlignment="textEnd"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/my_name"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="15dp">
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/freelance_key_textview"
+                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/yellow"
-                android:padding="5dp"
-                android:text="@string/freelance_key"
-                android:textSize="18sp" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/my_dev_profile"
+                android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/freelance_value_textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/freelance_value"
-                android:textAlignment="textEnd"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="15dp">
-
-            <TextView
-                android:id="@+id/phone_key_textview"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/yellow"
-                android:padding="5dp"
-                android:text="@string/phone_key"
-                android:textSize="18sp" />
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/phone_value_textview"
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/rounded_corners"
+                    android:padding="10dp"
+                    android:text="@string/fa_user_alt_slash_solid"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    app:solid_icon="true" />
+
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/rounded_corners"
+                    android:padding="10dp"
+                    android:text="@string/fa_envelope"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    app:solid_icon="true" />
+
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/rounded_corners"
+                    android:padding="10dp"
+                    android:text="@string/fa_envelope"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    app:solid_icon="true" />
+
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/rounded_corners"
+                    android:padding="10dp"
+                    android:text="@string/fa_book_reader_solid"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    app:solid_icon="true" />
+
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/rounded_corners"
+                    android:padding="10dp"
+                    android:text="@string/fa_book_reader_solid"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    app:solid_icon="true" />
+
+                <info.androidhive.fontawesome.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/rounded_corners"
+                    android:padding="10dp"
+                    android:text="@string/fa_book_reader_solid"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    app:solid_icon="true" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginVertical="12dp"/>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/phone_value"
-                android:textAlignment="textEnd"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:orientation="horizontal"
+                android:layout_marginVertical="15dp">
 
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginVertical="15dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:padding="5dp"
+                    android:text="@string/username_key"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/username_value"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="15dp">
+
+                <TextView
+                    android:id="@+id/freelance_key_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:padding="5dp"
+                    android:text="@string/freelance_key"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/freelance_value_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/freelance_value"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="15dp">
+
+                <TextView
+                    android:id="@+id/phone_key_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:padding="5dp"
+                    android:text="@string/phone_key"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/phone_value_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/phone_value"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="15dp">
+
+                <TextView
+                    android:id="@+id/address_key_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:padding="5dp"
+                    android:text="@string/address_key"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/address_value_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/address_value"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginVertical="20dp"/>
 
             <TextView
-                android:id="@+id/address_key_textview"
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/yellow"
-                android:padding="5dp"
-                android:text="@string/address_key"
-                android:textSize="18sp" />
+                android:text="Languages"
+                android:textColor="@color/black"
+                android:textSize="25sp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="14dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="French"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <ProgressBar
+                    android:id="@+id/ProgressBarFrench"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/yellow_progressbar" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="English"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/ProgressBarEnglish"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/yellow_progressbar" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arabe"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/ProgressBarArab"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/yellow_progressbar" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginVertical="20dp"/>
 
             <TextView
-                android:id="@+id/address_value_textview"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="5dp"
-                android:text="@string/address_value"
-                android:textAlignment="textEnd"
+                android:text="Skills"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/listDivider"
-            android:layout_marginVertical="20dp"/>
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Languages"
-            android:textColor="@color/black"
-            android:textSize="25sp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginVertical="14dp">
+                android:textSize="25sp"/>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="French"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="100%"
-                    android:textAlignment="textEnd"
-                    android:textSize="20sp"/>
-            </LinearLayout>
-            <ProgressBar
-                android:id="@+id/ProgressBarFrench"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_marginVertical="10dp"
-                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:indeterminate="false"
-                android:maxHeight="5dip"
-                android:minHeight="5dip"
-                android:progress="70"
-                android:progressDrawable="@drawable/yellow_progressbar" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginVertical="14dp">
-
+                android:orientation="vertical"
+                android:layout_marginVertical="14dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HTML5"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="false"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/yellow_progressbar" />
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="English"
-                    android:textSize="20sp"/>
-                <TextView
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="14dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSS"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="100%"
-                    android:textAlignment="textEnd"
-                    android:textSize="20sp"/>
+                    android:indeterminate="false"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/yellow_progressbar" />
 
             </LinearLayout>
-
-            <ProgressBar
-                android:id="@+id/ProgressBarEnglish"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_marginVertical="10dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:indeterminate="false"
-                android:maxHeight="5dip"
-                android:minHeight="5dip"
-                android:progress="70"
-                android:progressDrawable="@drawable/yellow_progressbar" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginVertical="14dp">
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Arabe"
-                    android:textSize="20sp"/>
-                <TextView
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="14dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Javascript"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="100%"
-                    android:textAlignment="textEnd"
-                    android:textSize="20sp"/>
+                    android:indeterminate="false"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/yellow_progressbar" />
 
             </LinearLayout>
 
-            <ProgressBar
-                android:id="@+id/ProgressBarArab"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_marginVertical="10dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:indeterminate="false"
-                android:maxHeight="5dip"
-                android:minHeight="5dip"
-                android:progress="70"
-                android:progressDrawable="@drawable/yellow_progressbar" />
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/listDivider"
-            android:layout_marginVertical="20dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Skills"
-            android:textColor="@color/black"
-            android:textSize="25sp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginVertical="14dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="HTML5"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="100%"
-                    android:textAlignment="textEnd"
-                    android:textSize="20sp"/>
-            </LinearLayout>
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_marginVertical="10dp"
-                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:indeterminate="false"
-                android:maxHeight="5dip"
-                android:minHeight="5dip"
-                android:progress="70"
-                android:progressDrawable="@drawable/yellow_progressbar" />
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginVertical="14dp">
+                android:orientation="vertical"
+                android:layout_marginVertical="14dp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CSS"
-                    android:textSize="20sp"/>
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C / C++"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="100%"
-                    android:textAlignment="textEnd"
-                    android:textSize="20sp"/>
+                    android:indeterminate="false"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/yellow_progressbar" />
 
             </LinearLayout>
 
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_marginVertical="10dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:indeterminate="false"
-                android:maxHeight="5dip"
-                android:minHeight="5dip"
-                android:progress="70"
-                android:progressDrawable="@drawable/yellow_progressbar" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginVertical="14dp">
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Javascript"
-                    android:textSize="20sp"/>
-                <TextView
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginVertical="14dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Python"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:textAlignment="textEnd"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="100%"
-                    android:textAlignment="textEnd"
-                    android:textSize="20sp"/>
+                    android:indeterminate="false"
+                    android:maxHeight="5dip"
+                    android:minHeight="5dip"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/yellow_progressbar" />
 
             </LinearLayout>
 
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_marginVertical="10dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:indeterminate="false"
-                android:maxHeight="5dip"
-                android:minHeight="5dip"
-                android:progress="70"
-                android:progressDrawable="@drawable/yellow_progressbar" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginVertical="14dp">
-
-            <LinearLayout
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="C / C++"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="100%"
-                    android:textAlignment="textEnd"
-                    android:textSize="20sp"/>
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginVertical="20dp"/>
 
-            </LinearLayout>
-
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_marginVertical="10dp"
-                android:layout_width="fill_parent"
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:indeterminate="false"
-                android:maxHeight="5dip"
-                android:minHeight="5dip"
-                android:progress="70"
-                android:progressDrawable="@drawable/yellow_progressbar" />
-
+                android:text="Extra Skills"
+                android:textColor="@color/black"
+                android:textSize="25sp"/>
         </LinearLayout>
+    </ScrollView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginVertical="14dp">
+    <include layout="@layout/activity_side_navigator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Python"
-                    android:textSize="20sp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="100%"
-                    android:textAlignment="textEnd"
-                    android:textSize="20sp"/>
-
-            </LinearLayout>
-
-            <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_marginVertical="10dp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:indeterminate="false"
-                android:maxHeight="5dip"
-                android:minHeight="5dip"
-                android:progress="70"
-                android:progressDrawable="@drawable/yellow_progressbar" />
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/listDivider"
-            android:layout_marginVertical="20dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Extra Skills"
-            android:textColor="@color/black"
-            android:textSize="25sp"/>
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>
