@@ -55,5 +55,15 @@
         android:backgroundTint="@color/bg_icon_sidebar"
         android:textSize="15sp"
         android:padding="15dp"/>
+    <TextView
+        android:id="@+id/sidebar_nav_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_awesome"
+        android:text="address-book"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/bg_icon_sidebar"
+        android:textSize="15sp"
+        android:padding="15dp"/>
 
 </LinearLayout>

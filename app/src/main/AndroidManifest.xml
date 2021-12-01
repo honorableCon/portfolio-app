@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Portfolio">
         <activity
-            android:name=".MyContact"
+            android:name=".MyContacts"
             android:exported="true" />
         <activity
             android:name=".MyExperiences"
