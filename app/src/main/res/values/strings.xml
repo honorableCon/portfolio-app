@@ -1,0 +1,21 @@
+<resources>
+    <string name="lorem">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum
+    </string>
+    <string name="app_name">portfolio</string>
+    <string name="my_name">Dame Leye</string>
+    <string name="my_dev_profile">MERN Stack Developper</string>
+    <string name="profile_picture_description">Mon photo de profil</string>
+
+    <string name="username_key">Username:</string>
+    <string name="username_value">HonorableCon</string>
+
+    <string name="phone_key">Phone:</string>
+    <string name="phone_value">HonorableCon</string>
+
+    <string name="freelance_key">Freelance:</string>
+    <string name="freelance_value">Available</string>
+
+    <string name="address_key">Address:</string>
+    <string name="address_value">Dakar, Senegal</string>
+</resources>
